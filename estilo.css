@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+}
+
+.quadrado {
+    text-align: center;
+    width: 50px;
+    background: #eee;
+    display: inline-block;
+    padding: 40px;
+    font-size: 60px;
+    margin: 5px;
+    cursor: pointer;
+    color: #eee;
+}
+
+.jogador, .vencedor {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background: #eee;
+    cursor: pointer;
+}
+
+.jogada {
+    animation-name: jogadaAnimacao;
+    animation-duration: 0.5s;
+}
+
+@keyframes jogadaAnimacao {
+    0% {transform: rotateZ(0deg);}
+    15% {transform: rotateZ(15deg);}
+    40% {transform: rotateZ(40deg);}
+    90% {transform: rotateZ(90deg);}
+    100% {transform: rotateZ(180deg);}
+}
+
+.venceu {
+    animation-name: venceuAnimacao;
+    animation-duration: 1s;
+}
+
+@keyframes venceuAnimacao {
+    0%   {border: 0 solid black;}
+    30%  {border: 2px dotted white}
+    60%  {border: 3px dotted black}
+    80%  {border: 2px dotted white}
+    100%  {border: 0 solid black}
+    
+}
